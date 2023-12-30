@@ -72,7 +72,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://linkedin.com/in/3darrenli"
             target="_blank"
             rel="noreferrer"
           >
@@ -85,7 +85,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/darrenli03"
             target="_blank"
             rel="noreferrer"
           >
@@ -98,7 +98,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+            href="https://www.youtube.com/channel/UCJmub37KyZwUQNaeNuWptHA"
             rel="noreferrer"
             target="_blank"
           >

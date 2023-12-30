@@ -14,7 +14,7 @@ const Home = () => {
   const line2Array = line2.split('')
   const job = "Programmer / Student / Violinist"
   const jobArray = job.split('')
-  
+
 
   useEffect(() => {
     return setTimeout(() => {
@@ -50,14 +50,15 @@ const Home = () => {
               idx={16}
             />
             <br />
-            
+
           </h1>
           <h2>
-          <AnimatedLetters
+            <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
               idx={3}
             />
+            
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
