@@ -8,29 +8,18 @@ import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
-  const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+  const line1 = "Hi,"
+  const line1Array = line1.split('')
+  const line2 = "I'm Darren Li."
+  const line2Array = line2.split('')
+  const job = "Programmer / Student / Violinist"
+  const jobArray = job.split('')
+  
 
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 6000)
   }, [])
 
   return (
@@ -38,28 +27,38 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
+            {/* <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i</span>
+            <span className={`${letterClass} _13`}>,</span> */}
+
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={line1Array}
+              idx={10}
+            />
             <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            {/* <span className={`${letterClass} _14`}>I</span>
+            <span className={`${letterClass} _15`}>'</span>
+            <span className={`${letterClass} _16`}>m</span>
             <img
               src={LogoTitle}
               alt="JavaScript Developer Name, Web Developer Name"
-            />
+            /> */}
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
+              strArray={line2Array}
+              idx={16}
             />
             <br />
-            <AnimatedLetters
+            
+          </h1>
+          <h2>
+          <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={3}
             />
-          </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
+          </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
