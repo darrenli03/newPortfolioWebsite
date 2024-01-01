@@ -14,29 +14,32 @@ const Home = () => {
   const line2Array = line2.split('')
   const job = "Programmer / Student / Violinist"
   const jobArray = job.split('')
-
+  var counter1 = 14
+  var counter2 = counter1 + line1Array.length;
+  var counter3 = counter2 + line2Array.length
 
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 15000)
   }, [])
 
   return (
     <>
       <div className="container home-page">
         <div className="text-zone">
-          <h1>
+          <h1 style={{ fontSize: '60px' }}>
             {/* <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i</span>
             <span className={`${letterClass} _13`}>,</span> */}
-
+             
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line1Array}
-              idx={10}
+              idx={counter1}
             />
             <br />
+            
             {/* <span className={`${letterClass} _14`}>I</span>
             <span className={`${letterClass} _15`}>'</span>
             <span className={`${letterClass} _16`}>m</span>
@@ -47,22 +50,22 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line2Array}
-              idx={16}
+              idx={counter2}
             />
 
             <h2>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
-                idx={3}
+                idx={counter3}
 
               />
             </h2>
             <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>
-            <br/>
-            <br/>
+            <br />
+            <br />
           </h1>
 
         </div>
