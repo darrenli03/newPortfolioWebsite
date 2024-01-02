@@ -10,7 +10,7 @@
   .logo {
     display: block;
     padding: 8px 0;
-
+    
     img {
       display: block;
       margin: 8px auto;
@@ -20,6 +20,12 @@
       &.sub-logo {
         width: 50px;
       }
+    }
+
+    h1{
+      
+      color: #4EE7FF;
+      text-align: center;
     }
   }
 
