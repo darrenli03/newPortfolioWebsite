@@ -109,7 +109,7 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               icon={faSkype}
@@ -117,7 +117,7 @@ const Sidebar = () => {
               className="anchor-icon"
             />
           </a>
-        </li>
+        </li> */}
       </ul>
       <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
