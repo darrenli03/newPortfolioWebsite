@@ -56,15 +56,32 @@ const Portfolio = () => {
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={'Portfolio'.split('')}
-            idx={15}
-          />
-        </h1>
+        <div className = "title">
+          <h1 className="page-title">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={'Portfolio'.split('')}
+              idx={15}
+            />
+          </h1>
+        </div>
         {/* <div>{renderPortfolio(portfolio)}</div> */}
+        
+        <div className = "content">
+          <h2 className = "title1"> 2023 Betty F. Brown Awards for Instrumental Excellence </h2>
+          <iframe width="240" height="160" src="https://www.youtube.com/embed/JerLFXsPIfI" title="Charles Auguste de Bériot: Violin Concerto No.7, Op.76, 1st mov." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h2 className = "title2"> 2022 Indiana All-State Orchestra</h2>
+          <iframe width="240" height="160" src="https://www.youtube.com/embed/QMvA-6ADYhU" title="Bach/Stokowski- Komm süsser tod" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="240" height="160" src="https://www.youtube.com/embed/XjGtZoUWLJA" title="Hanson Symphony No. 3 I- Andante lamentando- Agitato" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="240" height="160" src="https://www.youtube.com/embed/MI3-jl-7Z8w" title="Hanson Symphony No.3 II- Andante Tranquillo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="240" height="160" src="https://www.youtube.com/embed/PzsDSzT2W6s" title="Hanson Symphony No. 3- III- Tempo Scherzando" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="240" height="160" src="https://www.youtube.com/embed/EWURBLiC1l0" title="Hanson Symphony No.3- IV Largamente e pesante" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
       </div>
+
+      
+      
       <Loader type="pacman" />
     </>
   )

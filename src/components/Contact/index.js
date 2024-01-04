@@ -85,12 +85,16 @@ const Contact = () => {
         <div className="info-map">
           Darren Li, <br />
           Columbus, Indiana, 47201 <br />
+          United States of America <br/>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[39.2014, -85.911056]} zoom={13}>
+          <MapContainer center={[39.2014, -85.911056]} zoom={4}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[39.2014, -85.911056]}>
               <Popup>Here's my hometown!</Popup>
+            </Marker>
+            <Marker position={[36.0014, -78.9382]}>
+              <Popup>Here's where I go to school!</Popup>
             </Marker>
           </MapContainer>
         </div>
