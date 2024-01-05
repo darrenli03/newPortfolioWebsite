@@ -28,7 +28,7 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone">
-          <h1 style={{ fontSize: '60px' }}>
+          <h1 >
             {/* <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i</span>
             <span className={`${letterClass} _13`}>,</span> */}
