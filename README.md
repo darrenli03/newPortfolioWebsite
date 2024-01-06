@@ -1,4 +1,5 @@
-YouTube Tutorial on how I built this portfolio => https://youtu.be/ESHaail1eGc
+Hi, and thanks for checking out the source code for my website darrenli.org! Big thanks to FreeCodeCamp for 
+creating the tutorial that I started this project off of, you can check out their tutorial at this link: https://youtu.be/ESHaail1eGc
 
 # Getting Started with Create React App
 
