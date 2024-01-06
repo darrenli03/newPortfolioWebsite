@@ -2,7 +2,7 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
@@ -33,7 +33,7 @@
       color: #4EE7FF;
       font-size: 18px;
       position: absolute;
-      margin-top: 18px;
+      margin-top: 0px;
       margin-left: -15px;
       // animation: fadeIn 1s 8s backwards;
       opacity: 0.6;
@@ -48,6 +48,8 @@
       animation-delay: 1.4s;
     }
   }
+
+
 
   h2 {
     color: #6B6570;
@@ -90,19 +92,24 @@
     display: none;
   }
 
-  .home-page .text-zone {
-    position: initial;
-    width: 100%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+  .home-page{
+    .text-zone{
+      position: initial;
+      width: 100%;
+      transform: none;
+      text-align: center;
+  
+      
+    }
+    
+  } 
+  
 
   .home-page .flat-button {
     float: none;
     display: block;
-    margin: 20px auto 0 auto;
     width: 124px;
+    left: 10px;
   }
 
   .logo-container {

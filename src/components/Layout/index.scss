@@ -7,6 +7,7 @@
 .top-tags {
   bottom: auto;
   top: 35px;
+  left: 8%;
 }
 
 .tags {
@@ -14,7 +15,7 @@
   opacity: 0.6;
   position: absolute;
   bottom: 0;
-  left: 120px;
+  left: 8%;
   font-size: 18px;
   font-family: 'La Belle Aurore', cursive;
 }
@@ -65,7 +66,7 @@
       }
 
       &:after {
-        content: '<h1/>';
+        content: '</h1>';
         font-family: 'La Belle Aurore', cursive;
         color: #4EE7FF;
         font-size: 18px;
