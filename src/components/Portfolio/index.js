@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import { Link } from 'react-router-dom'
 import { getDocs, collection } from 'firebase/firestore'
 // import { db } from '../../firebase';
 
@@ -68,6 +69,12 @@ const Portfolio = () => {
         {/* <div>{renderPortfolio(portfolio)}</div> */}
         
         <div className = "content">
+          
+          <h2 className = "title3">TankTrouble Recreation (based off of tanktrouble.com)</h2>
+          <Link to="https://github.com/darrenli03/newPortfolioWebsite/raw/main/public/TankTroubleRecreate.jar" className="flat-button">
+            Click to dowload the jar file!
+          </Link>
+          <br/><br/><br/>
           <h2 className = "title1"> 2023 Betty F. Brown Awards for Instrumental Excellence </h2>
           <iframe width="240" height="160" src="https://www.youtube.com/embed/JerLFXsPIfI" title="Charles Auguste de Bériot: Violin Concerto No.7, Op.76, 1st mov." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <h2 className = "title2"> 2022 Indiana All-State Orchestra</h2>
@@ -76,8 +83,8 @@ const Portfolio = () => {
           <iframe width="240" height="160" src="https://www.youtube.com/embed/MI3-jl-7Z8w" title="Hanson Symphony No.3 II- Andante Tranquillo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <iframe width="240" height="160" src="https://www.youtube.com/embed/PzsDSzT2W6s" title="Hanson Symphony No. 3- III- Tempo Scherzando" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <iframe width="240" height="160" src="https://www.youtube.com/embed/EWURBLiC1l0" title="Hanson Symphony No.3- IV Largamente e pesante" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <h2 className = "title3">TankTrouble Recreation (based off of tanktrouble.com)</h2>
-          <a href="https://github.com/darrenli03/newPortfolioWebsite/raw/main/public/TankTroubleRecreate.jar" download="TankTroubleRecreate.jar">Click to dowload the jar file!</a>
+          
+          {/* <a href="https://github.com/darrenli03/newPortfolioWebsite/raw/main/public/TankTroubleRecreate.jar" download="TankTroubleRecreate.jar">Click to dowload the jar file!</a> */}
 
           
         </div>
