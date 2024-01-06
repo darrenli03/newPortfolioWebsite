@@ -28,51 +28,55 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone">
-          <h1 >
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i</span>
-            <span className={`${letterClass} _13`}>,</span> */}
+          <div>
+            <h1 >
+              {/* <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i</span>
+              <span className={`${letterClass} _13`}>,</span> */}
 
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={line1Array}
-              idx={counter1}
-            />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={line1Array}
+                idx={counter1}
+              />
+              <br />
+
+              {/* <span className={`${letterClass} _14`}>I</span>
+              <span className={`${letterClass} _15`}>'</span>
+              <span className={`${letterClass} _16`}>m</span>
+              <img
+                src={LogoTitle}
+                alt="JavaScript Developer Name, Web Developer Name"
+              /> */}
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={line2Array}
+                idx={counter2}
+              />
+              <br />
+            </h1>
+          </div>
+          <div>
+            <br />
+            <br/>
+            <h2>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={counter3}
+
+              />
+            </h2>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+            <br />
             <br />
 
-            {/* <span className={`${letterClass} _14`}>I</span>
-            <span className={`${letterClass} _15`}>'</span>
-            <span className={`${letterClass} _16`}>m</span>
-            <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            /> */}
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={line2Array}
-              idx={counter2}
-            />
-            <br></br>
-          </h1>
-          
+          </div>
+          {/* <Logo /> */}
         </div>
-        <div className='text-zone2'>
-          <h2>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={counter3}
 
-            />
-          </h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-          <br />
-          <br />
-
-        </div>
-        {/* <Logo /> */}
       </div >
 
       <Loader type="pacman" />
