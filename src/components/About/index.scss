@@ -1,3 +1,14 @@
+.container.about-page{
+
+  margin-top: 0px;
+  margin-left: 100px;
+  overflow: visible;
+  width: 85%;
+  text-align: left;
+}
+
+
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -77,5 +88,16 @@
   }
   83% {
     transform: rotateX(90deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container.about-page{
+
+    margin-top: 60px;
+    margin-left: 11% ;
+    overflow: visible;
+    width: 85%;
+    text-align: left;
   }
 }

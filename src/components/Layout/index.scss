@@ -4,25 +4,32 @@
   position: absolute;
 }
 
-.top-tags {
-  bottom: auto;
-  top: 35px;
-  left: 8%;
-}
-
 .tags {
   color: #4EECFF;
-  opacity: 0.6;
   position: absolute;
-  bottom: 0;
   left: 8%;
   font-size: 18px;
   font-family: 'La Belle Aurore', cursive;
 }
 
+.top-tags {
+  
+  top: 35px;
+  margin-left: -35px;
+}
+.bottom-tags{
+  bottom: 0;
+  margin-left: -15px;
+}
+
 .bottom-tag-html {
   margin-left: -20px;
 }
+.bottom-tag-body {
+  margin-left: 20px;
+  
+}
+
 
 .container {
   width: 100%;
@@ -61,7 +68,7 @@
         position: absolute;
         margin-top: -10px;
         left: -10px;
-        opacity: 0.6;
+        opacity: 1;
         line-height: 18px;
       }
 
@@ -75,7 +82,7 @@
         left: -30px;
         bottom: -20px;
         margin-left: 20px;
-        opacity: 0.6;
+        opacity: 1;
       }
     }
 
@@ -118,6 +125,25 @@
 @media screen and (max-width: 1200px) {
   .page {
     position: initial;
+  }
+
+  .top-tags {
+  
+    top: 35px;
+    margin-left: -20px;
+  }
+  .bottom-tags{
+    bottom: 0;
+    margin-left: 0px;
+  }
+  
+  .bottom-tag-html {
+    margin-left: -20px;
+  }
+  .bottom-tag-body {
+    margin-left: 20px;
+    margin-top: 0px;
+    
   }
 
   .container {
